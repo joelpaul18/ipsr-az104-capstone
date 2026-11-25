@@ -1,0 +1,20 @@
+# Terraform local directories and provider binaries
+.terraform/
+.terraform.lock.hcl
+
+# State files (contain sensitive resource IDs and outputs)
+*.tfstate
+*.tfstate.*
+
+# Plan files and variable files with credentials
+*.tfplan
+*.tfvars
+*.tfvars.json
+
+# Crash logs and override files
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
